@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius{
+    display: grid;
+    grid-template-areas: 'verde vermelho'
+    'amarelo azul';
+    /*espaço entre as grids (cores)*/
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    /*areas escritas no grid template area*/
+    grid-area: azul;
+    background-color: rgb(18, 118, 233);
+    /*somente de onde aparece a area*/
+    border-bottom-right-radius: 100%;
+}
+
+.red {  
+    /*areas escritas no grid template area*/
+    grid-area: vermelho;
+    background-color: rgb(221, 64, 64);
+    /*somente de onde aparece a area*/
+    border-top-right-radius: 100%;
+}
+.yellow {
+    /*areas escritas no grid template area*/
+    grid-area: amarelo;
+    background-color: rgb(251, 255, 0);
+    /*somente de onde aparece a area*/
+    border-bottom-left-radius: 100%;
+}
+.green {
+    /*areas escritas no grid template area*/
+    grid-area: verde;
+    background-color: rgb(101, 185, 76);
+    /*somente de onde aparece a area*/
+    border-top-left-radius: 100%;
+}
+
+.selected {
+    opacity: 0.3;
+}
